@@ -7,3 +7,4 @@ router = APIRouter()
 def ask_q(question: str):
     answer = rag_query(question)
     return {"question": question, "answer": answer}
+
